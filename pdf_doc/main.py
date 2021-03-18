@@ -1,5 +1,5 @@
 import PyPDF2
-pdfFileObj = open('201CS132 - Md Rakib Hasan - SM110 - Report 1.pdf', 'rb')
-pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
-pdfObj = pdfReader.getPage(0)
-print(pdfObj.extractText())
+file = open('SM111.pdf', 'rb')
+read = PyPDF2.PdfFileReader(file)
+get_page = read.getPage(0)
+print(get_page.extractText())
